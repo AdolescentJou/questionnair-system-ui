@@ -1,0 +1,65 @@
+$font-Family: "PingFangSC-Regular","PingFang SC";
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.formBuilder-Header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1199;
+    height: 60px;
+    width: 100%;
+    min-width: 1000px;
+    // background-color: #286FB7;
+    .headerTitle{
+      height: 60px;
+      width: 100%;
+      // background:rgba(255,255,255,1);
+      // background-color: #286FB7;
+      min-width: 1000px;
+      display: flex;
+      flex-direction: row;
+      border-bottom:1px solid rgba(238,238,238,1);
+      .headerTitleIcon{
+        width: 490px;
+        height: 60px;
+        display: flex;
+        font-size:18px;
+        font-family:$font-Family;
+        font-weight:600;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        img{
+          height: 80%;
+          width: 240px;
+          margin-right: 10px;
+        }
+      }
+      .headerTitleUser{
+        width: auto;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .divider{
+          color:rgba(216,216,216,1);
+        }  
+        .ant-btn-link{
+          padding-left: 9px;
+          padding-right: 9px;
+          font-size:16px;
+          font-family:$font-Family;
+          font-weight:500;
+          // color:rgba(86,92,110,1);
+          color: white;
+          margin: 0px 10px 0px 10px;
+        }
+      }
+      .headerTitleBlank{
+        flex-grow: 1;
+      }
+    }
+}

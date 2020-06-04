@@ -1,0 +1,327 @@
+$font-Family: "PingFangSC-Regular", "PingFang SC";
+$font-color: rgba(51, 51, 51, 1);
+$border-color: rgba(233, 235, 240, 1);
+
+body {
+  background-color: rgba(243, 244, 245, 1);
+}
+
+.submissionNav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 99;
+  height: 60px;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  min-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  box-shadow: 0px 1px 0px 0px rgba(233, 235, 240, 1);
+  // justify-content: center;
+  align-items: center;
+  .ant-btn {
+    border-radius: 4px;
+    background: rgba(0, 122, 255, 1);
+    font-size: 15px;
+    font-family: $font-Family;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    height: 36px;
+    margin-left: 25px;
+  }
+  input {
+    display: none;
+  }
+}
+
+.formBuilder-Submission {
+  padding-top: 120px;
+  width: 900px;
+  min-height: 962px;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  .Content {
+    width: 900px;
+    min-height: 864px;
+    margin-top: 49px;
+    background: white;
+    border: 1px solid $border-color;
+    .submission-title {
+      width: 100%;
+      height: 56px;
+      line-height: 56px;
+      font-size: 18px;
+      color: $font-color;
+      background: #fafafa;
+      font-weight: 600;
+      text-align: center;
+      border-bottom: 1px solid $border-color;
+      font-family: $font-Family;
+      margin-bottom: 45px;
+    }
+    .form-layout {
+      margin-left: 25px;
+      width: 850px;
+      label {
+        font-size: 14px;
+        font-family: $font-Family;
+        font-weight: 600;
+        color: $font-color;
+        line-height: 18px;
+        &::after {
+          content: "";
+        }
+        &.ant-form-item-required {
+          &::after {
+            content: "*";
+            margin: 0 0 0 6px;
+            color: red;
+            top: 0.5px;
+          }
+          &::before {
+            margin-right: 0;
+            content: "";
+          }
+        }
+        .label-text {
+          margin-right: 3px;
+        }
+      }
+      .checkbox-span,
+      .radiobox-span {
+        white-space: normal;
+        font-weight: normal;
+        display: block;
+        height: auto;
+        line-height: 22px;
+        word-break: break-all;
+        font-family: PingFangSC-Regular, PingFang SC;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+      }
+      .ant-form {
+        .ant-form-item {
+          font-size: 14px;
+          margin-bottom: 37px;
+          .ant-form-item-control-wrapper {
+            .ant-form-item-control {
+              .ant-form-explain {
+                margin-top: 7px;
+                margin-bottom: -8px;
+              }
+              .ant-form-item-children {
+                .ant-select-selection--single {
+                  position: relative;
+                  height: 34px;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border-radius: 0;
+                }
+              }
+            }
+          }
+
+          .ant-input {
+            height: 34px;
+            font-size: 14px;
+            border-radius: 0;
+          }
+          .ant-btn {
+            width: 140px;
+            height: 36px;
+            background: rgba(0, 122, 255, 1);
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: $font-Family;
+            font-weight: 400;
+            line-height: 36px;
+            color: $white;
+          }
+          .fileUploadContainer {
+            .ant-upload {
+              width: 260px;
+              height: 34px;
+              border-radius: 4px;
+              .ant-btn {
+                width: 260px;
+                height: 34px;
+                border-radius: 4px;
+                border: 1px dashed rgba(206, 207, 213, 1);
+                background-color: white;
+                .fileUploadStatus {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  img {
+                    width: 20px;
+                    height: 20px;
+                  }
+                  span {
+                    display: inline-block;
+                    margin-left: 3px;
+                    font-size: 13px;
+                    font-family: "PingFangSC-Regular", "PingFang SC";
+                    font-weight: 400;
+                    margin-left: 3px;
+                    color: rgba(51, 51, 51, 1);
+                  }
+                  i {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: rgba(51, 51, 51, 1);
+                  }
+                }
+              }
+            }
+            .showFileList {
+              max-height: 121px;
+              width: 300px;
+              &::-webkit-scrollbar-track {
+                box-shadow: 0 0;
+                background-color: rgba(255, 255, 255, 0);
+              }
+              &::-webkit-scrollbar-track-piece {
+                background-color: rgba(255, 255, 255, 0);
+              }
+              &:hover {
+                cursor: auto;
+              }
+              .fileItem {
+                width: 285px;
+                height: 34px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                .fileName {
+                  width: 260px;
+                  height: 34px;
+                  background: rgba(239, 240, 248, 1);
+                  border-radius: 5px;
+                  display: flex;
+                  align-items: center;
+                  i {
+                    margin-left: 17px;
+                  }
+                  span {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                    margin-left: 8px;
+                    font-size: 13px;
+                    font-family: "PingFangSC-Regular", "PingFang SC";
+                    font-weight: 400;
+                    color: rgba(51, 51, 51, 1);
+                  }
+                }
+                img {
+                  position: absolute;
+                  widows: 16px;
+                  height: 16px;
+                  right: 0px;
+                }
+              }
+            }
+          }
+          .imageUploadContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .ant-upload {
+              display: inline-block;
+              width: 140px;
+              height: 116px;
+              border-radius: 4px;
+              margin-bottom: 7px;
+              .ant-btn {
+                width: 100%;
+                height: 100%;
+                border: 1px dashed rgba(206, 207, 213, 1);
+                background-color: white;
+                i {
+                  color: rgba(0, 122, 255, 1);
+                  font-size: 25px;
+                  margin-bottom: 3px;
+                }
+                p {
+                  font-family: "PingFangSC-Regular", "PingFang SC";
+                  &:nth-child(2) {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: rgba(119, 119, 119, 1);
+                  }
+                  &:nth-child(3) {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: rgba(204, 204, 204, 1);
+                  }
+                }
+              }
+            }
+            .img-item-container {
+              display: flex;
+              width: 300px;
+              margin-left: 15px;
+              &::-webkit-scrollbar-track {
+                box-shadow: 0 0;
+                background-color: rgba(255, 255, 255, 0);
+              }
+              &::-webkit-scrollbar-track-piece {
+                background-color: rgba(255, 255, 255, 0);
+              }
+              &:hover {
+                cursor: auto;
+              }
+              .imageItem {
+                flex-basis: 150px;
+                flex-shrink: 0;
+                width: 140px;
+                height: 116px;
+                margin-right: 9px;
+                margin-bottom: 7px;
+                position: relative;
+                &:nth-child(2) {
+                  margin-left: 9px;
+                }
+                img {
+                  width: 100%;
+                  height: 100%;
+                  z-index: -1;
+                }
+                .deleteBtn {
+                  z-index: 111;
+                  position: absolute;
+                  top: 7px;
+                  right: 6px;
+                  img {
+                    width: 15px;
+                    height: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .row-layout {
+        display: flex;
+      }
+      .column-layout {
+        display: flex;
+        flex-direction: column;
+      }
+      .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+        margin-left: 0;
+        span {
+          word-break: break-all;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

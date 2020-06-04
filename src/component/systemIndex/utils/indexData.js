@@ -1,0 +1,45 @@
+export const swiperData = [
+    {
+        img:"swiperImg1",
+        title:"创建问卷从未如此简单",
+        description:`深度问卷调查的各类组件，只需要简单的拖拽和设置就能生成您的高度定制化问卷，
+        帮您轻松完成市场调查、社会调查、满意度调查等各类在线问卷调查。`
+    },
+    {
+        img:"swiperImg2",
+        title:"专属于您的风格",
+        description:`问卷的结构由您自己来决定，只需要简单的拖拽，就可以创建出属于您专属风格的问卷，
+        让您的问卷更容易被人接收。`
+    },
+    {
+        img:"swiperImg3",
+        title:"可以自动校验",
+        description:`我们的问卷组件都是高度定制开发，每一个组件都可以添加约束校验，使您在收集问卷数据
+        的时候更加便捷，更加高效。`
+    },
+    {
+        img:"swiperImg4",
+        title:"灵活的数据分析",
+        description:`我们提供表格和各类统计图用于分析您的数据，您可以对收集到的数据进行灵活的分析，
+        轻松的得出问卷调查的结论。`
+    },
+]
+
+export const footData = [
+    {
+        inforTitle:"产品",
+        inforList:["企业版","尊享版","定制版","样本服务","企业微信"]
+    },
+    {
+        inforTitle:"客户",
+        inforList:["客户展示","最新问卷"]
+    },
+    {
+        inforTitle:"支持",
+        inforList:["客服中心","帮助中心","开放平台"]
+    },
+    {
+        inforTitle:"团队",
+        inforList:["关于我们","加入我们","产品动态"]
+    },
+]

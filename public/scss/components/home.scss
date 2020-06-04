@@ -1,0 +1,83 @@
+$btnBgBlue: #007aff;
+$inputBorderColor: #5a8ced;
+$tableHeaderFontColor: #a4adc8;
+$tableBodyFontColor: #565c6e;
+$borderBottomColor: #e8e8e8;
+$tableRowHoverBg: #d4e5fd;
+$white: #fff;
+.FormListNav {
+  height: 70px;
+  width: 90%;
+  margin: auto;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .NavTitle {
+    width: 130px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .flexBlank {
+    flex-grow: 1;
+  }
+  .NavBtn {
+    width: 400px;
+    text-align: right;
+    .ant-btn{
+      width: 130px;
+      height: 40px;
+      margin-right: 15px;
+      font-size: 15px;
+    }
+  }
+}
+
+.FormCardListContainer {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  min-height: 700px;
+  .ant-card {
+    width: 100%;
+    margin-bottom: 15px;
+    .ant-card-body {
+      padding: 10px 0px 10px 15px;
+      .timeGroupContainer{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        span{
+          font-size: 14px;
+          font-weight: 400;
+          color: #565c6e;
+          &:nth-child(1){
+              margin-right: 25px;
+          }
+        }
+      }
+      .btnGroupContainer{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .ant-btn{
+          font-size: 14px;
+          color:  #565c6e;
+          font-weight: 550;
+        }
+      }
+    }
+  }
+  .ant-pagination {
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+

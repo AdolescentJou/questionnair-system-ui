@@ -1,0 +1,20 @@
+.formBuilderFooter{
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid gray;
+    span{
+        &:nth-child(1){
+            font-size: 18px;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+        &:nth-child(2){
+            font-size: 14px;
+        }
+    }
+}

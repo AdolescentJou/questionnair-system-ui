@@ -1,0 +1,84 @@
+.ant-modal-close {
+  .ant-modal-close-x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.RegisterModal{
+  .ant-modal {
+    .ant-modal-content{
+      height: 600px;
+      width: 560px;
+      border-radius: 0px;
+    }
+  }
+}
+.TestRegisterContainer {
+  .ModalTitle{
+    padding: 10px 30px;
+    height: 60px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    img{
+      margin-right: 10px;
+    }
+    span{
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .ant-form {
+    width: 350px;
+    margin: auto;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .ant-form-item {
+      text-align: center;
+    }
+    .ant-input-affix-wrapper .ant-input {
+      min-height: 50px;
+    }
+    .ant-input {
+      width: 350px;
+      height: 50px;
+      border-radius: 15px;
+    }
+    .ant-btn {
+      width: 350px;
+      height: 50px;
+      border-radius: 15px;
+      background-color: #3385ff;
+    }
+    
+    .vCodeContent {
+      display: flex;
+      .vcodewrap {
+        // background-color: $gray-400;
+        width: 40%;
+        height: 45px;
+        display: flex;
+        border: 1px solid rgb(217, 217, 217);
+        border-radius: 15px;
+        padding: 10px;
+        margin-right: 5%;
+        position: relative;
+        .checkout {
+          position: absolute;
+          left: 8px;
+          bottom: -15px;
+          color: #286fb7;
+          font-size: 10px;
+          cursor: pointer;
+        }
+      }
+      .ant-input {
+        width: 194px;
+        height: 45px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
